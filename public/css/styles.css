@@ -74,3 +74,31 @@ body {
   body a:visited {
     color: #494949;
     text-decoration: none; }
+
+.content-container {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.about-contain, .home-contain, .notfound-contain, .work-contain {
+  border: 1px solid #494949;
+  background-color: #EEBE42; }
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.nav li {
+  float: right; }
+
+.nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px; }
+
+.nav li a:hover:not(.active) {
+  background-color: #EEBE42; }
+
+.nav .active {
+  background-color: #EEBE42; }
