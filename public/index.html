@@ -18,20 +18,28 @@ https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body ng-app="myApp">
-  <div ng-view></div>
-  <nav>
-    <ul>
-      <li>
-        <a ng-href="/home">Home</a>
-      </li>
-      <li>
-        <a ng-href="/work">Work</a>
-      </li>
-      <li>
-        <a ng-href="/about">About</a>
-      </li>
-    </ul>
-  </nav>
-   <h4>Hello</h4>
+  <div class="nav">
+    <nav>
+      <ul>
+        <li>
+          <a ng-href="/home">Home</a>
+        </li>
+        <li>
+          <a ng-href="/work">Work</a>
+        </li>
+        <li>
+          <a ng-href="/about">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content-container">
+    <div class="content-wrapper">
+      <div class="index-contain">
+        <div ng-view></div>
+        <h4>Hello</h4>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
