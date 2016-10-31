@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('myApp',['ngBind'])
   .directive("navScroll",
     function ($window) {
       return function (scope, element, attr) {
