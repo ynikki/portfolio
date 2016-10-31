@@ -67,7 +67,9 @@ table {
 /* close commented backslash hack */
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #494949; }
+  color: #494949;
+  height: 100vh;
+  margin: 0; }
   body a {
     color: #494949;
     text-decoration: none; }
@@ -77,7 +79,14 @@ body {
 
 .content-container {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.content-wrapper {
+  display: block;
+  align-content: space-between;
+  min-height: 100%; }
 
 .about-contain, .home-contain, .notfound-contain, .work-contain {
   border: 1px solid #494949;

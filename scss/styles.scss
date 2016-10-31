@@ -3,12 +3,36 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600');
 
+$small: "(min-width: 100px) and (max-width: 600px)";
+$medium: "(min-width: 601px) and (max-width: 900px)";
+$large: "(min-width: 900px)";
+
 $darkgrey: #494949;
 $goldenyellow: #EEBE42;
+
+@mixin small{
+  @media #{$small} {
+    @content;
+  }
+}
+
+@mixin medium{
+  @media #{$medium} {
+    @content;
+  }
+}
+
+@mixin large{
+  @media #{$large} {
+    @content;
+  }
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: $darkgrey;
+  height: 100vh;
+  margin: 0;
   a{
     color: $darkgrey;
     text-decoration: none;
@@ -22,6 +46,13 @@ body {
 .content-container{
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper{
+  display: block;
+  align-content: space-between;
+  min-height: 100%;
 }
 
 .about-contain, .home-contain, .notfound-contain, .work-contain{
