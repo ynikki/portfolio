@@ -90,27 +90,27 @@ body {
 
 .about-contain, .home-contain, .notfound-contain, .work-contain {
   border: 1px solid #494949;
-  background-color: #EEBE42; }
+  background-color: #EEBE42;
+  height: 100vh;
+  margin-top: 50px; }
 
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-
-.nav li {
-  float: right; }
-
-.nav li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px; }
-
-.nav li a:hover:not(.active) {
-  background-color: #EEBE42; }
-
-.nav .active {
-  background-color: #EEBE42; }
+.nav {
+  position: fixed; }
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  .nav li {
+    float: right; }
+  .nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px; }
+  .nav li a:hover:not(.active) {
+    background-color: #EEBE42; }
+  .nav .active {
+    background-color: #EEBE42; }
 
 .footer {
   width: 100%;

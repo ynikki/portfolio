@@ -58,9 +58,12 @@ body {
 .about-contain, .home-contain, .notfound-contain, .work-contain{
   border: 1px solid $darkgrey;
   background-color: $goldenyellow;
+  height: 100vh;
+  margin-top: 50px;
 }
 
 .nav{
+  position: fixed;
   ul{
     list-style-type: none;
     margin: 0;
