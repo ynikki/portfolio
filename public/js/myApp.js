@@ -14,11 +14,11 @@ angular.module('myApp', ['ngRoute'])
         })
         .when('/about', {
           templateUrl: 'views/about.html',
-          controller: 'booksController'
+          controller: 'aboutController'
         })
         .when('/work', {
           templateUrl: 'views/work.html',
-          controller: 'moviesController'
+          controller: 'workController'
         })
         .when('/404', {
           templateUrl: 'views/404.html'
