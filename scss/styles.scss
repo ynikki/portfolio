@@ -1,2 +1,18 @@
 @import 'partials/reset';
 @import 'partials/clearfix';
+@import 'partials/content';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #494949;
+  a{
+    color: #494949;
+    text-decoration: none;
+  }
+  a:visited{
+    color: #494949;
+    text-decoration: none;
+  }
+}
