@@ -24,4 +24,4 @@ angular.module('myApp', ['ngRoute'])
           templateUrl: 'views/404.html'
         });
     }
-  ])
+  ]);
