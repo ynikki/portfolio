@@ -102,3 +102,11 @@ body {
 
 .nav .active {
   background-color: #EEBE42; }
+
+.footer {
+  width: 100%;
+  background-color: #EEBE42;
+  text-align: center;
+  color: #f0f0f0;
+  height: 4em;
+  padding-top: 2rem; }
