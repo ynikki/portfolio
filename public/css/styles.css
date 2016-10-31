@@ -112,6 +112,9 @@ body {
   .nav .active {
     background-color: #EEBE42; }
 
+.nav > a {
+  display: inline-block; }
+
 .footer {
   width: 100%;
   background-color: #EEBE42;

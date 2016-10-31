@@ -86,6 +86,10 @@ body {
   }
 }
 
+.nav > a{
+  display: inline-block;
+}
+
 .footer{
   width: 100%;
   background-color: $goldenyellow;
