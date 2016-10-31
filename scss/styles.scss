@@ -1,18 +1,53 @@
 @import 'partials/reset';
 @import 'partials/clearfix';
-@import 'partials/content';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600');
 
+$darkgrey: #494949;
+$goldenyellow: #EEBE42;
+
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #494949;
+  color: $darkgrey;
   a{
-    color: #494949;
+    color: $darkgrey;
     text-decoration: none;
   }
   a:visited{
-    color: #494949;
+    color: $darkgrey;
     text-decoration: none;
+  }
+}
+
+.content-container{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.about-contain, .home-contain, .notfound-contain, .work-contain{
+  border: 1px solid $darkgrey;
+  background-color: $goldenyellow;
+}
+
+.nav{
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li{
+    float: right;
+  }
+  li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  li a:hover:not(.active){
+    background-color: $goldenyellow;
+  }
+  .active{
+    background-color: $goldenyellow;
   }
 }
