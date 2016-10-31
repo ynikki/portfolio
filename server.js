@@ -5,10 +5,6 @@ const PORT = 8080;
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function (req, res) {
-  res.send('index.html');
-});
-
 app.use('/404', function (req, res) {
   res.status(404).render('404');
 });
