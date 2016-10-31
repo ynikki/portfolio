@@ -8,13 +8,13 @@ angular.module('myApp')
     $scope.$route = $route;
     $scope.$location = $location;
     $scope.$routeParams = $routeParams;
-  }]).controller('booksController', [
+  }]).controller('aboutController', [
       '$scope',
       '$routeParams',
       function ($scope, $routeParams) {
         $scope.params = $routeParams;
       }
-  ]).controller('moviesController', [
+  ]).controller('workController', [
       '$scope',
       '$routeParams',
       function ($scope, $routeParams) {
