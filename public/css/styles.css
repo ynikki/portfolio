@@ -88,21 +88,22 @@ body {
   align-content: space-between;
   min-height: 100%; }
 
-.about-contain, .home-contain, .notfound-contain, .work-contain {
+#about, #home, .notfound-contain, #work {
   border: 1px solid #494949;
   background-color: #EEBE42;
   height: 100vh;
   margin-top: 50px; }
 
 .nav {
-  position: fixed; }
+  position: fixed;
+  right: 0; }
   .nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden; }
   .nav li {
-    float: right; }
+    float: left; }
   .nav li a {
     display: block;
     text-align: center;
