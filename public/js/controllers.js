@@ -4,12 +4,24 @@ angular.module('myApp')
     '$route',
     '$routeParams',
     '$location',
+    '$rootScope',
     '$anchorScroll',
+    'ngSanitize',
     function ($scope, $route, $routeParams, $location) {
-    $scope.$route = $route;
-    $scope.$location = $location;
-    $scope.$routeParams = $routeParams;
-  }]).controller('aboutController', [
+      $scope.$route = $route;
+      $scope.$location = $location;
+      $scope.$routeParams = $routeParams;
+  }]).controller('siteController', [
+      '$scope',
+      '$location',
+      '$anchorScroll',
+      function($scope, $location, $anchorScroll, ngSanitize) {
+        $scope.scrollTo = function(id) {
+          $location.hash(id);
+          $anchorScroll();
+        }
+      }
+  ]).controller('aboutController', [
       '$scope',
       '$routeParams',
       function ($scope, $routeParams) {
@@ -21,18 +33,9 @@ angular.module('myApp')
       function ($scope, $routeParams) {
          $scope.params = $routeParams;
       }
-  ]).controller('headerCtrl', [
-      '$anchorScroll',
-      '$location',
-      '$scope',
-      function ($anchorScroll, $location, $scope) {
-        $scope.gotoAnchor = function (x) {
-          var newHash = 'anchor' + x;
-          if ($location.hash() !== newHash) {
-            $location.hash('anchor' + x);
-          } else {
-            $anchorScroll();
-          }
-        }
-      }
-  ]);
+  ]).run(function($rootScope, $location, $anchorScroll, $routeParams) {
+    $rootScope.$on('$routeChangeSucess', function(newRoute, oldRoute) {
+      $location.hash($routeParams.scrollTo);
+      $anchorScroll();
+    })
+  }) 
