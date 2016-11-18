@@ -1,14 +1,12 @@
 @import 'partials/reset';
 @import 'partials/clearfix';
+@import 'partials/colors';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600');
 
 $small: "(min-width: 100px) and (max-width: 600px)";
 $medium: "(min-width: 601px) and (max-width: 900px)";
 $large: "(min-width: 900px)";
-
-$darkgrey: #494949;
-$goldenyellow: #EEBE42;
 
 @mixin small{
   @media #{$small} {
@@ -30,15 +28,17 @@ $goldenyellow: #EEBE42;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: $darkgrey;
+  color: #FFF;
   height: 100vh;
   margin: 0;
+  padding: 0;
+  background: linear-gradient(#000000, $navyBlue);
   a{
-    color: $darkgrey;
+    color: #FFF;
     text-decoration: none;
   }
   a:visited{
-    color: $darkgrey;
+    color: #FFF;
     text-decoration: none;
   }
 }
@@ -56,10 +56,8 @@ body {
 }
 
 #about, #home, .notfound-contain, #work{
-  border: 1px solid $darkgrey;
-  background-color: $goldenyellow;
-  height: 100vh;
   margin-top: 50px;
+  padding-top: 50px;
 }
 
 .nav{
@@ -93,7 +91,7 @@ body {
 
 .footer{
   width: 100%;
-  background-color: $goldenyellow;
+  background-color: $navyBlue;
   text-align: center;
   color: #f0f0f0;
   height: 4em;
