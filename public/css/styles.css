@@ -79,6 +79,9 @@ body {
     color: #FFF;
     text-decoration: none; }
 
+html {
+  overflow: hidden; }
+
 .content-container {
   display: flex;
   flex-flow: row nowrap;
@@ -93,6 +96,19 @@ body {
 #about, #home, .notfound-contain, #work {
   margin-top: 50px;
   padding-top: 50px; }
+
+.moon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #FFF;
+  box-shadow: 0 0 30px 10px #FFF; }
 
 .nav {
   position: fixed;
