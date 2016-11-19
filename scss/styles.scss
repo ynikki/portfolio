@@ -25,7 +25,6 @@ $large: "(min-width: 900px)";
     @content;
   }
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
@@ -42,7 +41,6 @@ body {
     text-decoration: none;
   }
 }
-
 html{
   overflow: hidden;
 }
@@ -61,6 +59,18 @@ html{
 #about, #home, .notfound-contain, #work{
   margin-top: 50px;
   padding-top: 50px;
+}
+.skies{
+  background-image: url('/images/skies.png');
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 .moon{
   top: 0;
@@ -91,10 +101,10 @@ html{
     padding: 14px 16px;
   }
   li a:hover:not(.active){
-    background-color: $goldenyellow;
+    background-color: $navyBlue;
   }
   .active{
-    background-color: $goldenyellow;
+    background-color: $navyBlue;
   }
 }
 

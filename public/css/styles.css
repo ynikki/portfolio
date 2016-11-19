@@ -97,6 +97,18 @@ html {
   margin-top: 50px;
   padding-top: 50px; }
 
+.skies {
+  background-image: url("/images/skies.png");
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+
 .moon {
   top: 0;
   left: 0;
@@ -123,9 +135,9 @@ html {
     text-align: center;
     padding: 14px 16px; }
   .nav li a:hover:not(.active) {
-    background-color: #EEBE42; }
+    background-color: #011627; }
   .nav .active {
-    background-color: #EEBE42; }
+    background-color: #011627; }
 
 .nav > a {
   display: inline-block; }
