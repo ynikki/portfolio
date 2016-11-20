@@ -1,0 +1,11 @@
+@function star-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000px)}px #FF';
+  @for $i from 2 through $n{
+    $value: '#{value}, #{random(2000)}px #{random(2000)}px #FFF';
+  }
+  @return unquote($value)
+}
+
+$small-shadow: star-shadow(700);
+$medium-shadow: star-shadow(200);
+$large-shadow: star-shadow(100);
