@@ -1,13 +1,13 @@
 //// FUNCTION FOR THE STARS ////
 @function star-shadow($n) {
-  $value: '#{random(3000)}px #{random(3000)}px #F0F0F0';
+  $value: '#{random(3000)}px #{random(300)}px #F0F0F0';
   @for $i from 2 through $n {
-    $value: '#{$value}, #{random(3000)}px #{random(3000)}px #F0F0F0';
+    $value: '#{$value}, #{random(3000)}px #{random(300)}px #F0F0F0';
   }
   @return unquote($value)
 }
 
 //// VARIABLE FOR THE DIFFERENT STARS ////
-$small-shadow: star-shadow(700);
-$medium-shadow: star-shadow(200);
-$large-shadow: star-shadow(100);
+$small-shadow: star-shadow(200);
+$medium-shadow: star-shadow(100);
+$large-shadow: star-shadow(50);
