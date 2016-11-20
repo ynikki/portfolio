@@ -65,6 +65,12 @@ table {
   display: block; }
 
 /* close commented backslash hack */
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.25; } }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
@@ -118,6 +124,64 @@ html {
   border-radius: 50%;
   background: #FFF;
   box-shadow: 0 0 30px 10px #FFF; }
+
+.stars {
+  z-index: 10; }
+
+.star {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; }
+
+.one {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: value, 770px 1351px #FFFFFF;
+  animation: twinkle 0.5s;
+  animation-timing-function: ease(in-out-circ);
+  animation-direction: alternate; }
+  .one:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: value, 770px 1351px #FFFFFF; }
+
+.two {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: value, 1701px 801px #FFFFFF;
+  animation: twinkle 0.9s;
+  animation-timing-function: ease(in-out-circ);
+  animation-direction: alternate; }
+  .two:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: value, 1701px 801px #FFFFFF; }
+
+.three {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: value, 942px 400px #FFFFFF;
+  animation: twinkle 2s;
+  animation-timing-function: ease(in-out-circ);
+  animation-direction: alternate; }
+  .three:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: value, 942px 400px #FFFFFF; }
 
 .nav {
   position: fixed;
