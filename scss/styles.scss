@@ -3,6 +3,7 @@
 @import 'partials/colors';
 @import 'partials/functions';
 @import 'partials/keyframes';
+@import 'partials/mixins';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600');
 
@@ -69,12 +70,10 @@ html{
   min-width: 100%;
   width: 100%;
   position: fixed;
-  z-index: -1;
   top: 0;
   left: 0;
 }
 .moon{
-  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -83,9 +82,6 @@ html{
   border-radius: 50%;
   background: #FFF;
   box-shadow: 0 0 30px 10px #FFF;
-}
-.stars{
-  z-index: 10;
 }
 .star{
   transform-style: preserve-3d;
