@@ -21,17 +21,23 @@ angular.module('myApp')
           $anchorScroll();
         }
       }
-  ]).controller('aboutController', [
+  ]).controller('haccController', [
       '$scope',
       '$routeParams',
       function ($scope, $routeParams) {
         $scope.params = $routeParams;
       }
-  ]).controller('workController', [
+  ]).controller('finalController', [
       '$scope',
       '$routeParams',
       function ($scope, $routeParams) {
          $scope.params = $routeParams;
+      }
+  ]).controller('nkoController', [
+      '$scope',
+      '$routeParams',
+      function ($scope, $routeParams) {
+        $scope.params = $routeParams;
       }
   ]).run(function($rootScope, $location, $anchorScroll, $routeParams) {
     $rootScope.$on('$routeChangeSucess', function(newRoute, oldRoute) {
