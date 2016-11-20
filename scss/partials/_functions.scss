@@ -1,8 +1,8 @@
 //// FUNCTION FOR THE STARS ////
-@function star-shadow ($n) {
-  $value: '#{random(2000)}px #{random(2000px)}px #FF';
-  @for $i from 2 through $n{
-    $value: '#{value}, #{random(2000)}px #{random(2000)}px #FFF';
+@function star-shadow($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFFFFF';
+  @for $i from 2 through $n {
+    $value: '#{value}, #{random(2000)}px #{random(2000)}px #FFFFFF';
   }
   @return unquote($value)
 }
