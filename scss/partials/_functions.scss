@@ -2,7 +2,7 @@
 @function star-shadow($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFFFFF';
   @for $i from 2 through $n {
-    $value: '#{value}, #{random(2000)}px #{random(2000)}px #FFFFFF';
+    $value: '#{$value}, #{random(2000)}px #{random(2000)}px #FFFFFF';
   }
   @return unquote($value)
 }
