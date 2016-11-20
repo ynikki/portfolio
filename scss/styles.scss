@@ -63,6 +63,7 @@ html{
   margin-top: 50px;
   padding-top: 50px;
 }
+//// STYLES FOR THE SKIES ////
 .skies{
   background-image: url('/images/skies.png');
   background-size: cover;
@@ -74,6 +75,7 @@ html{
   left: 0;
   z-index: -1;
 }
+//// STYLES FOR THE MOON ////
 .moon{
   left: 0;
   right: 0;
@@ -84,11 +86,7 @@ html{
   background: #FFF;
   box-shadow: 0 0 30px 10px #FFF;
 }
-.stars{
-  left: 0;
-  width: 100%;
-  height: 200px;
-}
+//// STYLES FOR THE STARS ////
 .star{
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -104,7 +102,7 @@ html{
   &:after{
     content: " ";
     position: absolute;
-    top: 0;
+    top: 2000px;
     width: 0.5px;
     height: 0.5px;
     background: transparent;
@@ -122,7 +120,7 @@ html{
   &:after{
     content: " ";
     position: absolute;
-    top: 0;
+    top: 2000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -140,13 +138,14 @@ html{
   &:after{
     content: " ";
     position: absolute;
-    top: 0;
+    top: 2000px;
     width: 2px;
     height: 2px;
     background: transparent;
     box-shadow: $large-shadow;
   } 
 }
+//// STYLES FOR THE NAV BAR ////
 .nav{
   position: fixed;
   right: 0;
@@ -175,7 +174,7 @@ html{
 .nav > a{
   display: inline-block;
 }
-
+//// STYLES FOR THE FOOTER ////
 .footer{
   width: 100%;
   background-color: $navyBlue;
