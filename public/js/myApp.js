@@ -12,13 +12,17 @@ angular.module('myApp', ['ngRoute'])
         .when('/', {
           templateUrl: 'views/default.html'
         })
-        .when('/about', {
-          templateUrl: 'views/about.html',
-          controller: 'aboutController'
+        .when('/hacc', {
+          templateUrl: 'views/hacc.html',
+          controller: 'haccController'
         })
-        .when('/work', {
-          templateUrl: 'views/work.html',
-          controller: 'workController'
+        .when('/final', {
+          templateUrl: 'views/final.html',
+          controller: 'finalController'
+        })
+        .when('/nko', {
+          templateUrl: 'views/nko.html',
+          controller: 'nkoController'
         })
         .when('/404', {
           templateUrl: 'views/404.html'
