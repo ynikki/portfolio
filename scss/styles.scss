@@ -173,6 +173,7 @@ html{
 .nav > a{
   display: inline-block;
 }
+//// FLEX FOR THE CHILD COMPONENT FOR THE WORK ////
 .sites{
   display: flex;
   justify-content: space-around;
@@ -186,6 +187,10 @@ html{
   border-radius: 50%;
   margin: 30px;
   display: block;
+  border: 8px solid #FFF;
+  h3{
+    text-align: center;
+  }
 }
 //// STYLES FOR THE FOOTER ////
 .footer{
