@@ -173,8 +173,15 @@ html{
 .nav > a{
   display: inline-block;
 }
-//// IMAGES FOR THE LINKS FOR THE WEBSITE ////
 .work{
+  display: flex;
+}
+.sites{
+  display: flex;
+}
+//// IMAGES FOR THE LINKS FOR THE WEBSITE ////
+.works{
+  justify-content: space-around;
   background-image: url('/images/placeholder.png');
   background-size: cover;
   width: 200px;
