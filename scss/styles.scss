@@ -170,9 +170,15 @@ html{
     background-color: $navyBlue;
   }
 }
-
 .nav > a{
   display: inline-block;
+}
+//// IMAGES FOR THE LINKS FOR THE WEBSITE ////
+.hacc2016{
+  img{
+    width: 150px;
+    border-radius: 50%;   
+  }
 }
 //// STYLES FOR THE FOOTER ////
 .footer{
