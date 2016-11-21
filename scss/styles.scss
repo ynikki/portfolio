@@ -5,7 +5,7 @@
 @import 'partials/keyframes';
 @import 'partials/mixins';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 400, 600, 700');
 
 $small: "(min-width: 100px) and (max-width: 600px)";
 $medium: "(min-width: 601px) and (max-width: 900px)";
@@ -32,6 +32,7 @@ $large: "(min-width: 900px)";
 body {
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
+  font-size: 1rem;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -59,10 +60,17 @@ html{
   align-content: space-around;
   min-height: 100%;
 }
-
+//// STYLES FOR THE ABOUT, HOME, AND WORK ////
 #about, #home, .notfound-contain, #work{
   margin-top: 50px;
   padding-top: 50px;
+}
+#about{
+  h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
 }
 //// STYLES FOR THE SKIES ////
 .skies{
