@@ -208,6 +208,10 @@ html{
     content: ' ';
     display: flex;
   }
+  &:hover{
+    border: 8px solid $yellow;
+    box-shadow: 0 0 30px 10px $yellow;
+  }
 }
 //// STYLES FOR THE FOOTER ////
 .footer{
