@@ -46,9 +46,6 @@ body {
     text-decoration: none;
   }
 }
-html{
-  overflow: hidden;
-}
 .content-container{
   display: flex;
   flex-flow: row nowrap;
@@ -64,6 +61,7 @@ html{
 #about, #home, .notfound-contain, #work{
   margin-top: 50px;
   padding-top: 50px;
+  height: 400px;
 }
 #about{
   h3{
