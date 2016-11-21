@@ -80,12 +80,14 @@ html{
 .moon{
   left: 0;
   top: 0;
+  right: 0;
   margin: 80px auto;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background: #FFF;
   box-shadow: 0 0 30px 10px #FFF;
+  position: absolute;
 }
 //// STYLES FOR THE STARS ////
 .star{
