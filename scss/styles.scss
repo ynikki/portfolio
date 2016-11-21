@@ -28,6 +28,7 @@ $large: "(min-width: 900px)";
     @content;
   }
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
@@ -79,7 +80,7 @@ html{
 .moon{
   left: 0;
   top: 0;
-  margin: auto;
+  margin: 80px auto;
   width: 70px;
   height: 70px;
   border-radius: 50%;
