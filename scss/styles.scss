@@ -173,21 +173,19 @@ html{
 .nav > a{
   display: inline-block;
 }
-.work{
-  display: flex;
-}
 .sites{
   display: flex;
+  justify-content: space-around;
 }
 //// IMAGES FOR THE LINKS FOR THE WEBSITE ////
 .works{
-  justify-content: space-around;
   background-image: url('/images/placeholder.png');
   background-size: cover;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-top: 30px;
+  margin: 30px;
+  display: block;
 }
 //// STYLES FOR THE FOOTER ////
 .footer{
