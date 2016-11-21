@@ -188,8 +188,16 @@ html{
   margin: 30px;
   display: block;
   border: 8px solid #FFF;
+  text-align: center;
   h3{
-    text-align: center;
+    height: inherit;
+    vertical-align: bottom;
+    margin: 0;
+    display: table-cell;
+  }
+  h3:after{
+    content: ' ';
+    display: block;
   }
 }
 //// STYLES FOR THE FOOTER ////
