@@ -55,7 +55,7 @@ html{
 }
 .content-wrapper{
   display: block;
-  align-content: space-between;
+  align-content: space-around;
   min-height: 100%;
 }
 
@@ -180,26 +180,29 @@ html{
 }
 //// IMAGES FOR THE LINKS FOR THE WEBSITE ////
 .works{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-image: url('/images/placeholder.png');
   background-size: cover;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin: 30px;
-  display: block;
   border: 8px solid #FFF;
-  text-align: center;
-  h3{
+  h4{
     width: 100px;
-    height: inherit;
     vertical-align: bottom;
     margin: 0;
-    display: table-cell;
+    padding: 0;
+    display: table-row;
     font-size: 0.9rem;
+    align-self: flex-end;
   }
-  h3:after{
+  h4:after{
     content: ' ';
-    display: block;
+    display: flex;
   }
 }
 //// STYLES FOR THE FOOTER ////
